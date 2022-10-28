@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="@drawable/blueabs">
+
+    <TextView
+        android:id="@+id/lblabt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chrisdesc"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20dp"
+        android:text="About the App"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/phinmalogo"
+        android:layout_marginTop="5dp"
+        android:layout_width="210dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/phinma" />
+
+    <ImageView
+        android:id="@+id/upanglogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/upang" />
+    <ImageView
+        android:id="@+id/citelogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toLeftOf="@id/upanglogo"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/cite" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblabt"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="sans-serif-black"
+        android:text="LearnBot is a learning guide type of application that allow users, specifically PHINMA-University of Pangasinan BSIT students to gain an understanding about basic web development computer languages and be familiarize with each coding languages. LearnBot will provide IT students with clear, easy and concise instructions. This will encourage IT students to engage in more enjoyable learning experience."
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/developers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90sp"
+        android:fontFamily="sans-serif-black"
+        android:text="UP-FA1-BSIT2-04\nDEVELOPERS"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/aira"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/developers"
+        android:layout_marginLeft="23dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/aira" />
+
+    <TextView
+        android:id="@+id/airadesc"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aira"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="AGUADO, ROBELLE AIRA E.\nroes.aguado.up\n@phinmaed.com"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/kennith"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/developers"
+        android:layout_marginLeft="205dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/kennith" />
+
+    <TextView
+        android:id="@+id/kendesc"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kennith"
+        android:layout_marginLeft="230sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20sp"
+        android:fontFamily="sans-serif-black"
+        android:text="BIAY, KENNITH D.\nkeda.biay.up\n@phinmaed.com"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+    <ImageButton
+        android:id="@+id/christian"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/airadesc"
+        app:srcCompat="@drawable/christian" />
+
+    <TextView
+        android:id="@+id/chrisdesc"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/christian"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="QUIRIMIT, CHRISTIAN NOE O.\nchor.quirimit.up@phinmaed.com"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sky"
+        app:itemIconTint="@drawable/highlightselect"
+        app:itemTextColor="@drawable/highlightselect"
+        android:id="@+id/btmnav"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

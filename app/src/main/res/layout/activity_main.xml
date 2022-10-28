@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/blueabs">
+
+    <TextView
+        android:id="@+id/lblweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="WEB DEVELOPMENT \nLANGUAGES (BASICS)"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <ImageView
+        android:id="@+id/phinmalogo"
+        android:layout_marginTop="5dp"
+        android:layout_width="210dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/phinma" />
+
+    <ImageView
+        android:id="@+id/upanglogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/upang" />
+    <ImageView
+        android:id="@+id/citelogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toLeftOf="@id/upanglogo"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/cite" />
+
+    <ImageButton
+        android:id="@+id/htmlbtn"
+        android:layout_width="167dp"
+        android:layout_height="167dp"
+        android:layout_below="@id/lblweb"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/html" />
+
+    <ImageButton
+        android:id="@+id/cssbtn"
+        android:layout_width="167dp"
+        android:layout_height="167dp"
+        android:layout_below="@id/htmlbtn"
+        android:layout_marginLeft="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/css" />
+
+    <ImageButton
+        android:id="@+id/jsbtn"
+        android:layout_width="200dp"
+        android:layout_height="167dp"
+        android:layout_below="@id/lblweb"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/htmlbtn"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/javascript"
+        />
+    <ImageButton
+        android:id="@+id/phpbtn"
+        android:layout_width="200dp"
+        android:layout_height="167dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/htmlbtn"
+        android:layout_toRightOf="@id/cssbtn"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/php" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sky"
+        app:itemIconTint="@drawable/highlightselect"
+        app:itemTextColor="@drawable/highlightselect"
+        android:id="@+id/btmnav"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
